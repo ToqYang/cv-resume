@@ -1,6 +1,7 @@
 <script>
 	import { cvData } from '$lib/stores/cvData';
 	import BottomNav from '$lib/components/BottomNav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { currentLanguage } from '$lib/stores/translations';
 	import { getContactConfig } from '$lib/config/contactConfig';
 	
@@ -15,105 +16,110 @@
 
 <div class="contact-container">
 	<!-- Header -->
-	<div class="contact-header">
-		<h1>{config.hero.title}</h1>
-		<p>{config.hero.description}</p>
+	<div class="container-medium">
+		<div class="contact-header">
+			<h1>{config.hero.title}</h1>
+			<p>{config.hero.description}</p>
+		</div>
 	</div>
 
 	{#if $cvData}
 		<!-- Contact Information -->
-		<div class="contact-info">
-			<div class="contact-card">
-				<div class="contact-icon">📧</div>
-				<h3>{config.links.email}</h3>
-				<p>{$cvData.personal.email}</p>
-				<a href="mailto:{$cvData.personal.email}" class="contact-link">{config.buttons.email}</a>
-			</div>
+		<div class="container-medium">
+			<div class="contact-info">
+				<div class="contact-card">
+					<div class="contact-icon">📧</div>
+					<h3>{config.links.email}</h3>
+					<p>{$cvData.personal.email}</p>
+					<a href="mailto:{$cvData.personal.email}" class="contact-link">{config.buttons.email}</a>
+				</div>
 
-			<div class="contact-card">
-				<div class="contact-icon">📱</div>
-				<h3>{config.links.phone}</h3>
-				<p>{$cvData.personal.phone}</p>
-				<div class="contact-actions">
-					<a href="https://wa.me/{$cvData.personal.phone.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp">
-						{config.buttons.whatsapp}
-					</a>
-					<a href="sms:{$cvData.personal.phone}" class="contact-link sms">
-						{config.buttons.sms}
+				<div class="contact-card">
+					<div class="contact-icon">📱</div>
+					<h3>{config.links.phone}</h3>
+					<p>{$cvData.personal.phone}</p>
+					<div class="contact-actions">
+						<a href="https://wa.me/{$cvData.personal.phone.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp">
+							{config.buttons.whatsapp}
+						</a>
+						<a href="sms:{$cvData.personal.phone}" class="contact-link sms">
+							{config.buttons.sms}
+						</a>
+					</div>
+				</div>
+
+				<div class="contact-card">
+					<div class="contact-icon">📍</div>
+					<h3>{config.links.location}</h3>
+					<p>{config.labels.remote}</p>
+					<span class="contact-note">{config.labels.availableForRemote}</span>
+				</div>
+
+				<div class="contact-card">
+					<div class="contact-icon">💼</div>
+					<h3>{config.links.linkedin}</h3>
+					<p>{config.labels.professionalProfile}</p>
+					<a href="https://linkedin.com/in/{$cvData.personal.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-link">
+						{config.buttons.linkedin}
 					</a>
 				</div>
-			</div>
 
-			<div class="contact-card">
-				<div class="contact-icon">📍</div>
-				<h3>{config.links.location}</h3>
-				<p>{config.labels.remote}</p>
-				<span class="contact-note">{config.labels.availableForRemote}</span>
-			</div>
+				<div class="contact-card">
+					<div class="contact-icon">🐙</div>
+					<h3>{config.links.github}</h3>
+					<p>{config.labels.codeRepository}</p>
+					<a href="https://github.com/{$cvData.personal.github}" target="_blank" rel="noopener noreferrer" class="contact-link">
+						{config.buttons.github}
+					</a>
+				</div>
 
-			<div class="contact-card">
-				<div class="contact-icon">💼</div>
-				<h3>{config.links.linkedin}</h3>
-				<p>{config.labels.professionalProfile}</p>
-				<a href="https://linkedin.com/in/{$cvData.personal.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-link">
-					{config.buttons.linkedin}
-				</a>
-			</div>
+				<div class="contact-card">
+					<div class="contact-icon">📝</div>
+					<h3>{config.links.technicalWriting}</h3>
+					<p>{config.labels.articlesTutorials}</p>
+					<a href="/blog" class="contact-link">{config.buttons.readArticles}</a>
+				</div>
 
-			<div class="contact-card">
-				<div class="contact-icon">🐙</div>
-				<h3>{config.links.github}</h3>
-				<p>{config.labels.codeRepository}</p>
-				<a href="https://github.com/{$cvData.personal.github}" target="_blank" rel="noopener noreferrer" class="contact-link">
-					{config.buttons.github}
-				</a>
-			</div>
+				<div class="contact-card">
+					<div class="contact-icon">📚</div>
+					<h3>{config.links.freeCodeCamp}</h3>
+					<p>{config.labels.freeCodeCampProfile}</p>
+					<a href="https://www.freecodecamp.org/espanol/news/author/toqyang/" target="_blank" rel="noopener noreferrer" class="contact-link">
+						{config.buttons.visitFreeCodeCamp}
+					</a>
+				</div>
 
-			<div class="contact-card">
-				<div class="contact-icon">📝</div>
-				<h3>{config.links.technicalWriting}</h3>
-				<p>{config.labels.articlesTutorials}</p>
-				<a href="/blog" class="contact-link">{config.buttons.readArticles}</a>
-			</div>
-
-			<div class="contact-card">
-				<div class="contact-icon">📚</div>
-				<h3>{config.links.freeCodeCamp}</h3>
-				<p>{config.labels.freeCodeCampProfile}</p>
-				<a href="https://www.freecodecamp.org/espanol/news/author/toqyang/" target="_blank" rel="noopener noreferrer" class="contact-link">
-					{config.buttons.visitFreeCodeCamp}
-				</a>
-			</div>
-
-			<div class="contact-card">
-				<div class="contact-icon">✍️</div>
-				<h3>{config.links.medium}</h3>
-				<p>{config.labels.mediumProfile}</p>
-				<a href="https://medium.com/@ToqYang" target="_blank" rel="noopener noreferrer" class="contact-link">
-					{config.buttons.visitMedium}
-				</a>
+				<div class="contact-card">
+					<div class="contact-icon">✍️</div>
+					<h3>{config.links.medium}</h3>
+					<p>{config.labels.mediumProfile}</p>
+					<a href="https://medium.com/@ToqYang" target="_blank" rel="noopener noreferrer" class="contact-link">
+						{config.buttons.visitMedium}
+					</a>
+				</div>
 			</div>
 		</div>
 	{/if}
 
 	<!-- Bottom Navigation -->
 	<BottomNav currentPage="/contact" />
-</div>
+	<Footer />
 
-<style>
-	/* Import Inter font for consistency */
-	@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+	<style>
+		/* Import Inter font for consistency */
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-	.contact-container {
-		max-width: 1000px;
-		margin: 0 auto;
-		padding: var(--spacing-4);
-		background-color: var(--background-primary);
-		min-height: 100vh;
-		position: relative;
-		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-		padding-bottom: 120px;
-	}
+		.contact-container {
+			min-height: 100vh;
+			background-color: #ffffff;
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		}
+
+		.container-medium {
+			max-width: 1050px;
+			margin: 0 auto;
+			padding: 0 2rem;
+		}
 
 	.contact-header {
 		text-align: center;
@@ -263,4 +269,5 @@
 
 
 	}
-</style> 
+</style>
+</div>

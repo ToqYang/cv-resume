@@ -1,8 +1,9 @@
 <script>
 	import BottomNav from '$lib/components/BottomNav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { designSystem } from '$lib/stores/designSystem';
-import { currentLanguage } from '$lib/stores/translations';
-import { getSystemDesignConfig } from '$lib/config/systemDesignConfig';
+	import { currentLanguage } from '$lib/stores/translations';
+	import { getSystemDesignConfig } from '$lib/config/systemDesignConfig';
 	
 	// Reactive config based on current language
 	$: config = $currentLanguage === 'ES' ? getSystemDesignConfig('ES') : getSystemDesignConfig('EN');
@@ -79,6 +80,8 @@ import { getSystemDesignConfig } from '$lib/config/systemDesignConfig';
 
 	<!-- Bottom Navigation -->
 	<BottomNav currentPage="/system-design" />
+	<Footer />
+
 </div>
 
 <style>

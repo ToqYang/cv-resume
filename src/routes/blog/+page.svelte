@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BottomNav from '$lib/components/BottomNav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { currentLanguage } from '$lib/stores/translations';
 	import { getBlogConfig } from '$lib/config/blogConfig';
 	
@@ -128,8 +129,9 @@
 		</div>
 	{/if}
 
-	<!-- Bottom Navigation -->
+	<!-- Bottom Navigation and Footer -->
 	<BottomNav currentPage="/blog" />
+	<Footer />
 </div>
 
 <style>

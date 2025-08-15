@@ -39,20 +39,12 @@ interface Navigation {
 	systemDesign: string;
 	blog: string;
 	contact: string;
+	styleGuide: string;
 }
 
 interface Footer {
 	styleGuide: string;
-	copyright: string;
-}
-
-interface Navigation {
-	home: string;
-	cv: string;
-	systemDesign: string;
-	blog: string;
-	contact: string;
-	styleGuide: string;
+	get copyright(): string;
 }
 
 interface TranslationData {
@@ -65,6 +57,17 @@ interface TranslationData {
 }
 
 type Language = 'EN' | 'ES';
+
+// Copyright text templates
+const COPYRIGHT = {
+    EN: (year: number) => `©${year} Santiago Toquica Yanguas. All rights reserved.`,
+    ES: (year: number) => `©${year} Santiago Toquica Yanguas. Todos los derechos reservados.`
+};
+
+// Helper function to get current year
+function getCurrentYear() {
+    return new Date().getFullYear();
+}
 
 // Translation data
 const translations: Record<Language, TranslationData> = {
@@ -128,7 +131,9 @@ const translations: Record<Language, TranslationData> = {
 		// Footer
 		footer: {
 			styleGuide: "Style Guide",
-			copyright: "© 2025 Santiago Toquica Yanguas. All rights reserved."
+			get copyright() {
+				return COPYRIGHT.EN(getCurrentYear());
+			}
 		}
 	},
 	ES: {
@@ -190,8 +195,10 @@ const translations: Record<Language, TranslationData> = {
 		},
 		// Footer
 		footer: {
-			styleGuide: "Guía de Estilos",
-			copyright: "© 2025 Santiago Toquica Yanguas. Todos los derechos reservados."
+			styleGuide: "Guía de Estilo",
+			get copyright() {
+				return COPYRIGHT.ES(getCurrentYear());
+			}
 		}
 	}
 };

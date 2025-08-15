@@ -5,6 +5,7 @@
 	import { currentLanguage } from '$lib/stores/translations';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import MetaTags from '$lib/components/SEO/MetaTags.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	
 	// Reactive config based on current language
 	$: config = $currentLanguage === 'ES' ? homeConfig.ES : homeConfig.EN;
@@ -74,22 +75,9 @@
 		</div>
 	</section>
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container-medium">
-			<div class="footer-content">
-				<div class="footer-links">
-					<a href="/style-guide" class="footer-link">{config.footer.styleGuide}</a>
-				</div>
-				<div class="footer-text">
-					<p>{config.footer.copyright}</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
 	<!-- Bottom Navigation -->
 	<BottomNav currentPage="/" />
+	<Footer />
 </div>
 
 <style>
