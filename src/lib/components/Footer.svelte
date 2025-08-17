@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import { currentLanguage, getCurrentLanguage } from '$lib/stores/translations';
     import { get } from 'svelte/store';
     
@@ -14,7 +15,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="/style-guide" class="footer-link">
+                <a href="{base}/style-guide" class="footer-link">
                     {footer.styleGuide}
                 </a>
             </div>

@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import { cvData, getCVDataForLanguage } from '$lib/stores/cvData';
 	import { designSystem } from '$lib/stores/designSystem';
 	import { homeConfig, getConfig } from '../lib/config/homeConfig';
@@ -36,7 +37,7 @@
 				</p>
 				<div class="hero-buttons">
 					{#each config.hero.buttons as button}
-						<a href={button.href} class="button-{button.type}">
+						<a href="{base}{button.href}" class="button-{button.type}">
 							{button.text}
 						</a>
 					{/each}

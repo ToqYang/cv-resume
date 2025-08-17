@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { designSystem } from '$lib/stores/designSystem';
 	import { currentLanguage } from '$lib/stores/translations';
 	
@@ -23,14 +24,14 @@
 <div class="floating-nav no-print">
 	<div class="nav-container">
 		<nav class="nav-menu">
-			<a href="/" class="nav-item">
-				<img src="/photo_profile.jpeg" loading="lazy" alt="Profile" class="nav-avatar">
+			<a href="{base}/" class="nav-item">
+				<img src="{base}/photo_profile.jpeg" loading="lazy" alt="Profile" class="nav-avatar">
 			</a>
-					<a href="/about" class="nav-link" class:active={currentPage === '/about'}>{navLabels.cv}</a>
-		<a href="/cover-letter" class="nav-link" class:active={currentPage === '/cover-letter'}>{navLabels.cover}</a>
-		<a href="/system-design" class="nav-link" class:active={currentPage === '/system-design'}>{navLabels.systemDesign}</a>
-		<a href="/blog" class="nav-link" class:active={currentPage === '/blog'}>{navLabels.blog}</a>
-		<a href="/contact" class="nav-link" class:active={currentPage === '/contact'}>{navLabels.contact}</a>
+					<a href="{base}/about" class="nav-link" class:active={currentPage === '/about'}>{navLabels.cv}</a>
+		<a href="{base}/cover-letter" class="nav-link" class:active={currentPage === '/cover-letter'}>{navLabels.cover}</a>
+		<a href="{base}/system-design" class="nav-link" class:active={currentPage === '/system-design'}>{navLabels.systemDesign}</a>
+		<a href="{base}/blog" class="nav-link" class:active={currentPage === '/blog'}>{navLabels.blog}</a>
+		<a href="{base}/contact" class="nav-link" class:active={currentPage === '/contact'}>{navLabels.contact}</a>
 		</nav>
 	</div>
 </div>

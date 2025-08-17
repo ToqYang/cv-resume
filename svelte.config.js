@@ -10,6 +10,7 @@ const config = {
 			fallback: '404.html',
 			precompress: false
 		}),
+		appDir: 'app',
 		prerender: {
 			entries: ['*']
 		},
