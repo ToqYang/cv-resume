@@ -210,7 +210,7 @@
 	}
 
 	.article-card {
-		background-color: white;
+		background-color: var(--background-primary);
 		border-radius: var(--border-radius-lg);
 		padding: var(--spacing-6);
 		box-shadow: var(--shadow-md);
@@ -304,9 +304,9 @@
 	}
 
 	.pagination-btn {
-		background-color: #ffffff;
-		color: #333333;
-		border: 2px solid #e9ecef;
+		background-color: var(--background-primary);
+		color: var(--text-primary);
+		border: 2px solid var(--border-color);
 		padding: 0.75rem 1.5rem;
 		border-radius: 8px;
 		font-weight: 600;
@@ -316,9 +316,9 @@
 	}
 
 	.pagination-btn:hover:not(:disabled) {
-		background-color: #f8f9fa;
-		border-color: #007bff;
-		color: #007bff;
+		background-color: var(--background-accent);
+		border-color: var(--primary-color);
+		color: var(--primary-color);
 	}
 
 	.pagination-btn:disabled {
@@ -332,9 +332,9 @@
 	}
 
 	.page-btn {
-		background-color: #ffffff;
-		color: #666666;
-		border: 2px solid #e9ecef;
+		background-color: var(--background-primary);
+		color: var(--text-secondary);
+		border: 2px solid var(--border-color);
 		padding: 0.75rem 1rem;
 		border-radius: 8px;
 		font-weight: 600;
@@ -345,15 +345,15 @@
 	}
 
 	.page-btn:hover {
-		background-color: #f8f9fa;
-		border-color: #007bff;
-		color: #007bff;
+		background-color: var(--background-accent);
+		border-color: var(--primary-color);
+		color: var(--primary-color);
 	}
 
 	.page-btn.active {
-		background-color: #007bff;
+		background-color: var(--primary-color);
 		color: #ffffff;
-		border-color: #007bff;
+		border-color: var(--primary-color);
 	}
 
 	/* Responsive design */

@@ -28,10 +28,11 @@
 
 <style>
     .footer {
-        background-color: var(--bg-secondary, #f8f9fa);
+        background-color: var(--bg-secondary);
         padding: 2rem 0 6rem 0; /* Increased bottom padding to 6rem */
         margin-top: 4rem;
-        border-top: 1px solid var(--border-color, #e9ecef);
+        border-top: 1px solid var(--border-color);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
     }
 
     .footer-content {
@@ -48,20 +49,21 @@
     }
 
     .footer-link {
-        color: var(--text-secondary, #6c757d);
+        color: var(--text-secondary);
         text-decoration: none;
         font-size: 0.9rem;
-        transition: color 0.2s ease;
+        transition: color 0.3s ease;
     }
 
     .footer-link:hover {
-        color: var(--primary-color, #000);
+        color: var(--text-primary);
     }
 
     .copyright {
-        color: var(--text-muted, #6c757d);
+        color: var(--text-muted);
         font-size: 0.875rem;
         margin-top: 0.5rem;
+        transition: color 0.3s ease;
     }
 
     @media (max-width: 768px) {

@@ -40,7 +40,7 @@ export const cvConfig = {
 			summary: {
 				title: "Summary",
 				description: "Professional summary and overview",
-				content: "With 5+ years of experience, Santiago is a results-driven full-stack and mobile developer who creates digital products that boost adoption by 98%, cut process times by 96.5%, and deliver measurable business growth. He blends user insight with strategic execution, helping teams work faster and smarter through AWS services, (Agile, Shape Up, and Kanban)."
+				content: "A technology enthusiast, Santiago is a Full-Stack and Mobile Developer with over 5 years of experience, specializing in AWS, SQL/NoSQL databases, and AI-powered development (Cursor, GitHub Copilot, AWS Bedrock). He has led projects that increased user adoption by 98% and reduced process times by 96.5%, driving efficiency, innovation, and sustainable business results."
 			},
 			experience: {
 				title: "Experience",
@@ -210,8 +210,8 @@ export const cvConfig = {
 			},
 			summary: {
 				title: "Resumen",
-				description: "Resumen profesional y visión general",
-				content: "Con más de 5 años de experiencia, Santiago es un Software Engineer especializado en Rails, React JS, Node JS y TypeScript. Crea soluciones centradas en el usuario, despliega aplicaciones móviles y colabora con equipos para alinear la tecnología con los objetivos empresariales. Santiago sobresale en optimización de rendimiento y traducción de necesidades de usuario en soluciones eficientes y escalables."
+				description: "Resumen profesional",
+				content: "Amante de la tecnología, Santiago es un Desarrollador Full-Stack y Móvil con más de 5 años de experiencia, especializado en AWS, bases de datos SQL/NoSQL y desarrollo potenciado por IA (Cursor, GitHub Copilot, AWS Bedrock). Ha liderado proyectos que incrementaron la adopción de usuarios en un 98% y redujeron procesos en un 96.5%, generando eficiencia, innovación y resultados de negocio sostenibles."
 			},
 			experience: {
 				title: "Experiencia",

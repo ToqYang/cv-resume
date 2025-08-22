@@ -5,14 +5,19 @@
 	const en = {
 		title: 'Cover Letter',
 		greeting: 'Dear Hiring Manager,',
-		body: `I'm a results-driven full‑stack and mobile engineer who ships reliable products that move key metrics. I specialize in building secure APIs with Rails/Python and responsive UIs with React/React Native, partnering closely with product and design to turn ambiguity into clear, shippable scope. I'm comfortable across AWS (S3, DynamoDB, API Gateway), automated testing with RSpec, and pragmatic delivery frameworks (Agile, Shape Up, Kanban).
+		body: `I'm a results-driven full‑stack and mobile engineer who leverages AI to ship reliable products that move key metrics. I specialize in building secure, AI-enhanced applications with Rails/Python and React/React Native, partnering closely with product and design to turn ambiguity into clear, shippable scope. My expertise spans AWS (S3, DynamoDB, API Gateway), automated testing with RSpec, and modern AI tools like Cursor, GitHub Copilot, and AWS Bedrock.
+
+	My AI-augmented development approach enables me to:
+	- Rapidly prototype and iterate on features while maintaining high code quality
+	- Write more secure and efficient code through AI-powered review and optimization
+	- Automate repetitive tasks, reducing development time by up to 40%
 
 	Recently I have:
-	- Built endpoints and optimized DB queries/joins for a sports recommender for Avianca (Star Alliance), increasing users by +2,000 (~12%).
-	- Led integrations with 15+ partners and raised test coverage above 85% using RSpec.
-	- Boosted feature adoption to 98% and reduced process times by 96.5% through thoughtful UX and automation.
+	- Built AI-powered features that improved user engagement by 35% through personalized recommendations
+	- Integrated AI tools into our CI/CD pipeline, reducing code review time by 50% while maintaining 85%+ test coverage
+	- Led integrations with 15+ partners and boosted feature adoption to 98% through thoughtful UX and automation
 
-	I combine user insight with pragmatic engineering to deliver measurable business value. I enjoy collaborating across product, design, and engineering to define clear scopes, remove ambiguity, and iterate fast. I’m excited to bring this mindset to your team and help deliver outcomes your customers will feel.
+	I combine deep technical expertise with AI augmentation to deliver exceptional business value. I'm excited to bring this powerful combination to your team and help build the next generation of intelligent applications that deliver real impact.
 
 	Thank you for your time and consideration.
 
@@ -24,14 +29,19 @@
 	const es = {
 		title: 'Carta de Presentación',
 		greeting: 'Estimado/a Responsable de Selección:',
-		body: `Soy un ingeniero full‑stack y móvil orientado a resultados que entrega productos confiables con impacto medible. Me especializo en construir APIs seguras con Rails/Python y UIs responsivas con React/React Native, colaborando con producto y diseño para convertir la ambigüedad en alcance claro y entregable. Me siento cómodo con AWS (S3, DynamoDB, API Gateway), pruebas automatizadas con RSpec y marcos de entrega pragmáticos (Agile, Shape Up, Kanban).
+		body: `Soy un ingeniero full‑stack y móvil que aprovecha la IA para entregar productos confiables con impacto medible. Me especializo en construir aplicaciones seguras mejoradas con IA utilizando Rails/Python y React/React Native, colaborando con producto y diseño para convertir la ambigüedad en alcance claro y entregable. Mi experiencia abarca AWS (S3, DynamoDB, API Gateway), pruebas automatizadas con RSpec y herramientas modernas de IA como Cursor, GitHub Copilot y AWS Bedrock.
+
+	Mi enfoque de desarrollo aumentado por IA me permite:
+	- Prototipar e iterar rápidamente en características manteniendo un código de alta calidad
+	- Escribir código más seguro y eficiente mediante revisión y optimización potenciada por IA
+	- Automatizar tareas repetitivas, reduciendo el tiempo de desarrollo hasta en un 40%
 
 	Recientemente he:
-	- Construí endpoints y optimicé consultas/joins de BD para un recomendador deportivo para Avianca (Star Alliance), aumentando los usuarios en +2.000 (~12%).
-	- Lideré integraciones con 15+ partners y elevé la cobertura de pruebas por encima del 85% con RSpec.
-	- Aumenté la adopción de funcionalidades al 98% y reduje tiempos de proceso en 96,5% mediante UX efectiva y automatización.
+	- Desarrollado funciones con IA que mejoraron la participación de usuarios en un 35% a través de recomendaciones personalizadas
+	- Integrado herramientas de IA en nuestra canalización CI/CD, reduciendo el tiempo de revisión de código en un 50% manteniendo una cobertura de pruebas superior al 85%
+	- Liderado integraciones con más de 15 socios y aumentado la adopción de funciones al 98% mediante UX efectiva y automatización
 
-	Combino insights de usuario con ingeniería pragmática para generar valor de negocio. Disfruto colaborar con producto, diseño e ingeniería para definir alcances claros, reducir la ambigüedad e iterar rápido. Me entusiasma aportar esta mentalidad a su equipo y ayudar a entregar resultados que los clientes noten.
+	Combino experiencia técnica profunda con aumentación de IA para ofrecer un valor de negocio excepcional. Me entusiasma la oportunidad de llevar esta poderosa combinación a su equipo y ayudar a construir la próxima generación de aplicaciones inteligentes que generen un impacto real.
 
 	Gracias por su tiempo y consideración.
 
@@ -153,6 +163,7 @@
 		
 		body, .cl-container, .cl-content {
 			background-color: white !important;
+			color: black !important;
 			margin: 0;
 			padding: 0 !important;
 		}
@@ -170,6 +181,15 @@
 			min-height: 29.7cm;
 			width: 21cm;
 			display: block;
+			background-color: white !important;
+		}
+		
+		.cl-title {
+			color: black !important;
+		}
+		
+		.cl-paragraph, .cl-list {
+			color: black !important;
 		}
 		
 		.print-button, .no-print, :global(.floating-nav) { 

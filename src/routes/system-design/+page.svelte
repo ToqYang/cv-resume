@@ -91,8 +91,9 @@
 	/* Container System */
 	.container {
 		min-height: 100vh;
-		background-color: #ffffff;
+		background-color: var(--bg-primary);
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		transition: background-color 0.3s ease;
 	}
 
 	.container-medium {
@@ -101,50 +102,49 @@
 		padding: 0 2rem;
 	}
 
-
-
-
-
 	/* Typography */
 	.heading-h1 {
 		font-size: 3.5rem;
 		font-weight: 700;
 		line-height: 1.2;
-		color: #000000;
+		color: var(--text-primary);
 		margin-bottom: 1rem;
+		transition: color 0.3s ease;
 	}
 
 	.heading-h2 {
 		font-size: 2.5rem;
 		font-weight: 700;
 		line-height: 1.3;
-		color: #000000;
+		color: var(--text-primary);
 		margin-bottom: 1.5rem;
+		transition: color 0.3s ease;
 	}
 
 	.heading-h4 {
 		font-size: 1.25rem;
 		font-weight: 600;
 		line-height: 1.4;
-		color: #000000;
+		color: var(--text-primary);
 		margin-bottom: 0.5rem;
+		transition: color 0.3s ease;
 	}
 
 	.text-lead {
 		font-size: 1.125rem;
 		line-height: 1.6;
-		color: #666666;
+		color: var(--text-secondary);
 		margin-bottom: 1.5rem;
+		transition: color 0.3s ease;
 	}
 
 	.text-paragraph {
 		font-size: 1rem;
 		line-height: 1.6;
-		color: #666666;
+		color: var(--text-secondary);
 		margin-bottom: 1rem;
+		transition: color 0.3s ease;
 	}
-
-
 
 	/* Expertise Section */
 	.expertise-section {
@@ -154,7 +154,8 @@
 	/* Hero Section */
 	.hero-section {
 		padding: 120px 0 80px 0;
-		background-color: #f8f9fa;
+		background-color: var(--bg-secondary);
+		transition: background-color 0.3s ease;
 	}
 
 	.hero-content {
@@ -173,10 +174,10 @@
 
 	/* Buttons */
 	.button-primary {
-		background-color: #007bff;
-		color: #ffffff;
+		background-color: var(--primary-color);
+		color: var(--button-primary-text);
 		padding: 12px 24px;
-		border: 2px solid #007bff;
+		border: 2px solid var(--primary-color);
 		border-radius: 50px;
 		font-size: 1rem;
 		font-weight: 600;
@@ -188,17 +189,17 @@
 	}
 
 	.button-primary:hover {
-		background-color: #ffffff;
-		color: #007bff;
+		background-color: var(--button-primary-hover-bg);
+		color: var(--button-primary-hover-text);
 		transform: translateY(-2px);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	}
 
 	.button-secondary {
-		background-color: #ffffff;
-		color: #000000;
+		background-color: var(--button-secondary-bg);
+		color: var(--button-secondary-text);
 		padding: 12px 24px;
-		border: 2px solid #000000;
+		border: 2px solid var(--button-secondary-border);
 		border-radius: 50px;
 		font-size: 1rem;
 		font-weight: 600;
@@ -210,8 +211,8 @@
 	}
 
 	.button-secondary:hover {
-		background-color: #000000;
-		color: #ffffff;
+		background-color: var(--button-secondary-hover-bg);
+		color: var(--button-secondary-hover-text);
 		transform: translateY(-2px);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	}
@@ -226,14 +227,14 @@
 
 	.expertise-card {
 		padding: 2rem;
-		background-color: #ffffff;
-		border: 1px solid #e9ecef;
+		background-color: var(--card-bg);
+		border: 1px solid var(--border-color);
 		border-radius: 12px;
 		transition: all 0.3s ease;
 	}
 
 	.expertise-card:hover {
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--shadow-hover);
 		transform: translateY(-2px);
 	}
 
@@ -250,20 +251,15 @@
 
 	.skill-list li {
 		padding: 0.5rem 0;
-		border-bottom: 1px solid #f0f0f0;
+		border-bottom: 1px solid var(--border-light);
 		font-size: 0.875rem;
-		color: #666666;
+		color: var(--text-secondary);
+		transition: color 0.3s ease, border-color 0.3s ease;
 	}
 
 	.skill-list li:last-child {
 		border-bottom: none;
 	}
-
-
-
-
-
-
 
 	/* Responsive Design */
 	@media (max-width: 768px) {
@@ -278,8 +274,6 @@
 		.hero-section {
 			padding: 80px 0 60px 0;
 		}
-
-
 
 		.hero-actions {
 			flex-direction: column;
@@ -310,4 +304,4 @@
 			padding: 0 1rem;
 		}
 	}
-</style> 
+</style>

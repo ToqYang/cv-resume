@@ -276,6 +276,12 @@
 		min-height: 100vh;
 		background-color: #ffffff;
 		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	:global(.dark) .container {
+		background-color: #1a1a1a;
+		color: #e0e0e0;
 	}
 
 	.container-main {
@@ -296,6 +302,11 @@
 		color: #000000;
 		margin-bottom: 1.5rem;
 		line-height: 1.2;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .main-title {
+		color: #ffffff;
 	}
 
 	.header-description {
@@ -304,12 +315,22 @@
 		line-height: 1.6;
 		max-width: 800px;
 		margin: 0 auto;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .header-description {
+		color: #a0a0a0;
 	}
 
 	/* Section Blocks */
 	.section-block {
 		padding: 60px 0;
 		border-bottom: 1px solid #e9ecef;
+		transition: border-color 0.3s ease;
+	}
+
+	:global(.dark) .section-block {
+		border-bottom: 1px solid #333333;
 	}
 
 	.section-block:last-child {
@@ -322,6 +343,11 @@
 		color: #000000;
 		margin-bottom: 1rem;
 		line-height: 1.3;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .section-title {
+		color: #ffffff;
 	}
 
 	.section-description {
@@ -329,6 +355,11 @@
 		color: #666666;
 		line-height: 1.6;
 		margin-bottom: 2rem;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .section-description {
+		color: #a0a0a0;
 	}
 
 	/* Color Swatches */
@@ -356,46 +387,33 @@
 		justify-content: center;
 		font-weight: 600;
 		font-size: 0.875rem;
+		transition: border-color 0.3s ease;
 	}
 
-	.primary-color {
-		color: #ffffff;
-	}
-
-	.primary-dark {
-		color: #ffffff;
-	}
-
-	.primary-light {
-		color: #000000;
-	}
-
-	.gray-1-color {
-		color: #000000;
-	}
-
-	.gray-2-color {
-		color: #000000;
-	}
-
-	.black-color {
-		color: #ffffff;
-	}
-
-	.white-color {
-		color: #000000;
+	:global(.dark) .swatch {
+		border: 2px solid #333333;
 	}
 
 	.swatch-label {
 		font-weight: 600;
 		color: #000000;
 		font-size: 1rem;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .swatch-label {
+		color: #ffffff;
 	}
 
 	.swatch-value {
 		font-size: 0.875rem;
 		color: #666666;
 		font-family: monospace;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .swatch-value {
+		color: #a0a0a0;
 	}
 
 	/* Typography Examples */
@@ -411,6 +429,12 @@
 		background-color: #f8f9fa;
 		border-radius: 12px;
 		border: 1px solid #e9ecef;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+
+	:global(.dark) .heading-example {
+		background-color: #2a2a2a;
+		border: 1px solid #333333;
 	}
 
 	.example-label {
@@ -424,6 +448,11 @@
 		font-weight: 600;
 		color: #000000;
 		font-size: 1rem;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .label-text {
+		color: #ffffff;
 	}
 
 	.badge {
@@ -441,6 +470,11 @@
 		color: #000000;
 		line-height: 1.2;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .heading-h1 {
+		color: #ffffff;
 	}
 
 	.heading-h2 {
@@ -449,6 +483,11 @@
 		color: #000000;
 		line-height: 1.3;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .heading-h2 {
+		color: #ffffff;
 	}
 
 	.heading-h3 {
@@ -457,6 +496,11 @@
 		color: #000000;
 		line-height: 1.3;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .heading-h3 {
+		color: #ffffff;
 	}
 
 	.heading-h4 {
@@ -465,6 +509,11 @@
 		color: #000000;
 		line-height: 1.4;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .heading-h4 {
+		color: #ffffff;
 	}
 
 	.heading-h5 {
@@ -473,6 +522,11 @@
 		color: #000000;
 		line-height: 1.4;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .heading-h5 {
+		color: #ffffff;
 	}
 
 	.heading-h6 {
@@ -481,6 +535,11 @@
 		color: #000000;
 		line-height: 1.4;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .heading-h6 {
+		color: #ffffff;
 	}
 
 	/* Text Styles */
@@ -496,6 +555,12 @@
 		background-color: #f8f9fa;
 		border-radius: 12px;
 		border: 1px solid #e9ecef;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+
+	:global(.dark) .text-example {
+		background-color: #2a2a2a;
+		border: 1px solid #333333;
 	}
 
 	.text-lead {
@@ -503,6 +568,11 @@
 		line-height: 1.6;
 		color: #666666;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .text-lead {
+		color: #a0a0a0;
 	}
 
 	.text-paragraph {
@@ -510,6 +580,11 @@
 		line-height: 1.6;
 		color: #666666;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .text-paragraph {
+		color: #a0a0a0;
 	}
 
 	.text-small {
@@ -517,6 +592,11 @@
 		line-height: 1.5;
 		color: #666666;
 		margin: 0;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .text-small {
+		color: #a0a0a0;
 	}
 
 	/* Spacing Examples */
@@ -536,6 +616,12 @@
 		background-color: #f8f9fa;
 		border-radius: 12px;
 		border: 1px solid #e9ecef;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+
+	:global(.dark) .spacing-item {
+		background-color: #2a2a2a;
+		border: 1px solid #333333;
 	}
 
 	.spacing-visual {
@@ -547,6 +633,11 @@
 		font-size: 0.875rem;
 		color: #666666;
 		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .spacing-label {
+		color: #a0a0a0;
 	}
 
 	/* Border Radius Examples */
@@ -566,6 +657,12 @@
 		background-color: #f8f9fa;
 		border-radius: 12px;
 		border: 1px solid #e9ecef;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+
+	:global(.dark) .radius-item {
+		background-color: #2a2a2a;
+		border: 1px solid #333333;
 	}
 
 	.radius-visual {
@@ -578,6 +675,11 @@
 		font-size: 0.875rem;
 		color: #666666;
 		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .radius-label {
+		color: #a0a0a0;
 	}
 
 	/* Shadow Examples */
@@ -597,6 +699,12 @@
 		background-color: #f8f9fa;
 		border-radius: 12px;
 		border: 1px solid #e9ecef;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+	}
+
+	:global(.dark) .shadow-item {
+		background-color: #2a2a2a;
+		border: 1px solid #333333;
 	}
 
 	.shadow-visual {
@@ -604,12 +712,22 @@
 		height: 80px;
 		background-color: #ffffff;
 		border-radius: 12px;
+		transition: background-color 0.3s ease;
+	}
+
+	:global(.dark) .shadow-visual {
+		background-color: #333333;
 	}
 
 	.shadow-label {
 		font-size: 0.875rem;
 		color: #666666;
 		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+
+	:global(.dark) .shadow-label {
+		color: #a0a0a0;
 	}
 
 	/* Button Examples */

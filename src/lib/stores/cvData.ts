@@ -65,8 +65,8 @@ const cvDataByLanguage: Record<'EN' | 'ES', CVData> = {
 			linkedin: 'https://www.linkedin.com/in/toqyang/',
 			github: 'https://github.com/ToqYang'
 		},
-		summary: 'Santiago is a results-driven full-stack and mobile developer who creates digital products that boost adoption by 98%, cut process times by 96.5%, and deliver measurable business growth. He blends user insight with strategic execution, helping teams work faster and smarter through AWS services, (Agile, Shape Up, and Kanban).',
-		skills: 'Ruby on Rails/Python (secure API development), React JS/React Native (responsive UIs), AWS S3/DynamoDB/API Gateway (scalable cloud architectures), Docker/Terraform (containerized deployments & IaC), RSpec (test coverage >85%), Figma/Adobe XD (user-centered design), Agile/Scrum/Shape Up/Kanban (on-time delivery of 15+ partner integrations).',
+		summary: 'Full-Stack & Mobile Developer with 5+ years of experience leveraging AI-powered tools (Cursor, GitHub Copilot, AWS Bedrock) to build digital products that increase user adoption by 98%, reduce process times by 96.5%, and drive measurable business growth. Skilled in handling SQL/NoSQL databases and cloud services, combining user insight with AI-augmented development to enable faster delivery, smarter collaboration, and impactful results through modern technologies and workflows.',
+		skills: 'AI/ML Development (RAG, MCP, LangChain, OpenAI API, AWS Bedrock), AI Tools (Cursor, GitHub Copilot, Tabnine), Ruby on Rails/Python (secure API development), React JS/React Native (responsive UIs), AWS S3/DynamoDB/API Gateway (scalable cloud architectures), Docker/Terraform (containerized deployments & IaC), RSpec (test coverage >85%), Figma/Adobe XD (user-centered design), Agile/Scrum/Shape Up/Kanban (on-time delivery of 15+ partner integrations).',
 			experience: [
 			{
 				title: 'Full Stack Mobile Developer',
@@ -81,7 +81,7 @@ const cvDataByLanguage: Record<'EN' | 'ES', CVData> = {
 				]
 			},
 			{
-				title: 'Mid Backend Developer',
+				title: 'SSr Backend Developer',
 				company: 'Symplifica',
 				period: '02/2022 - 07/2023',
 				location: 'Full Time – Remote',
@@ -183,8 +183,8 @@ const cvDataByLanguage: Record<'EN' | 'ES', CVData> = {
 			linkedin: 'https://www.linkedin.com/in/toqyang/',
 			github: 'https://github.com/ToqYang'
 		},
-		summary: 'Santiago es un desarrollador full‑stack y móvil orientado a resultados que crea productos digitales que aumentan la adopción en 98%, reducen los tiempos de proceso en 96,5% y generan crecimiento de negocio medible. Combina insights de usuario con ejecución estratégica, ayudando a los equipos a trabajar más rápido y de forma más inteligente mediante servicios de AWS y metodologías Agile, Shape Up y Kanban.',
-		skills: 'Ruby on Rails/Python (desarrollo de APIs seguras), React JS/React Native (UIs responsivas), AWS S3/DynamoDB/API Gateway (arquitecturas cloud escalables), Docker/Terraform (despliegues containerizados e IaC), RSpec (cobertura de tests >85%), Figma/Adobe XD (diseño centrado en el usuario), Agile/Scrum/Shape Up/Kanban (entrega a tiempo de 15+ integraciones con partners).',
+		summary: 'Desarrollador Full-Stack y Móvil con más de 5 años de experiencia que aprovecha herramientas potenciadas por IA (Cursor, GitHub Copilot, AWS Bedrock) para crear productos digitales que aumentan la adopción de usuarios en un 98%, reducen los tiempos de proceso en un 96.5% y generan un crecimiento empresarial medible. Experto en el manejo de bases de datos SQL/NoSQL y servicios en la nube, combinando la comprensión del usuario con el desarrollo aumentado por IA para permitir entregas más rápidas, colaboración más inteligente y resultados impactantes a través de tecnologías y flujos de trabajo modernos.',
+		skills: 'Desarrollo con IA/ML (RAG, MCP, LangChain, OpenAI API, AWS Bedrock), Herramientas de IA (Cursor, GitHub Copilot, Tabnine), Ruby on Rails/Python (desarrollo de APIs seguras), React JS/React Native (interfaces de usuario responsivas), AWS S3/DynamoDB/API Gateway (arquitecturas en la nube escalables), Docker/Terraform (despliegues en contenedores e IaC), RSpec (cobertura de pruebas >85%), Figma/Adobe XD (diseño centrado en el usuario), Agile/Scrum/Shape Up/Kanban (entrega puntual de más de 15 integraciones con socios).',
 		experience: [
 			{
 				title: 'Desarrollador Full Stack Móvil',

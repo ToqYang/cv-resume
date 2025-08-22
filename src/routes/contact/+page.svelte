@@ -111,8 +111,9 @@
 
 		.contact-container {
 			min-height: 100vh;
-			background-color: #ffffff;
+			background-color: var(--background-primary);
 			font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+			transition: background-color 0.3s ease;
 		}
 
 		.container-medium {
@@ -121,153 +122,149 @@
 			padding: 0 2rem;
 		}
 
-	.contact-header {
-		text-align: center;
-		margin-bottom: var(--spacing-8);
-		padding: var(--spacing-6);
-		background-color: var(--background-accent);
-		border-radius: var(--border-radius-lg);
-	}
-
-	.contact-header h1 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		color: var(--text-primary);
-		margin-bottom: var(--spacing-2);
-	}
-
-	.contact-header p {
-		font-size: 1.1rem;
-		color: var(--text-secondary);
-		max-width: 600px;
-		margin: 0 auto;
-	}
-
-	.contact-info {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: var(--spacing-6);
-		margin-bottom: var(--spacing-8);
-	}
-
-	.contact-card {
-		background-color: white;
-		padding: var(--spacing-6);
-		border-radius: var(--border-radius-lg);
-		box-shadow: var(--shadow-md);
-		text-align: center;
-		transition: all 0.3s ease;
-		border: 1px solid var(--border-color);
-	}
-
-	.contact-card:hover {
-		transform: translateY(-4px);
-		box-shadow: var(--shadow-lg);
-	}
-
-	.contact-icon {
-		font-size: 2.5rem;
-		margin-bottom: var(--spacing-3);
-	}
-
-	.contact-card h3 {
-		font-size: 1.3rem;
-		font-weight: 600;
-		color: var(--text-primary);
-		margin-bottom: var(--spacing-2);
-	}
-
-	.contact-card p {
-		color: var(--text-secondary);
-		margin-bottom: var(--spacing-3);
-		font-size: 1rem;
-	}
-
-	.contact-link {
-		display: inline-block;
-		background-color: var(--primary-color);
-		color: white;
-		padding: var(--spacing-2) var(--spacing-4);
-		border-radius: var(--border-radius);
-		text-decoration: none;
-		font-weight: 500;
-		transition: all 0.2s ease;
-		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-	}
-
-	.contact-link:hover {
-		background-color: #1e40af;
-		transform: translateY(-2px);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-
-	.contact-actions {
-		display: flex;
-		gap: var(--spacing-2);
-		justify-content: center;
-	}
-
-	.contact-actions .contact-link {
-		font-size: 0.8rem;
-		padding: var(--spacing-1) var(--spacing-2);
-	}
-
-	.contact-link.whatsapp {
-		background-color: #25D366;
-		color: white;
-	}
-
-	.contact-link.whatsapp:hover {
-		background-color: #128C7E;
-		color: white;
-		transform: translateY(-2px);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-
-	.contact-link.sms {
-		background-color: var(--primary-color);
-		color: white;
-	}
-
-	.contact-link.sms:hover {
-		background-color: #1e40af;
-		color: white;
-		transform: translateY(-2px);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-
-	.contact-note {
-		color: var(--text-secondary);
-		font-size: 0.9rem;
-		font-style: italic;
-	}
-
-
-
-	/* Responsive design */
-	@media (max-width: 768px) {
-		.contact-container {
-			padding: var(--spacing-2);
-		}
-
 		.contact-header {
-			padding: var(--spacing-4);
+			text-align: center;
+			margin-bottom: var(--spacing-8);
+			padding: var(--spacing-6);
+			background-color: var(--background-accent);
+			border-radius: var(--border-radius-lg);
 		}
 
 		.contact-header h1 {
-			font-size: 2rem;
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: var(--text-primary);
+			margin-bottom: var(--spacing-2);
+		}
+
+		.contact-header p {
+			font-size: 1.1rem;
+			color: var(--text-secondary);
+			max-width: 600px;
+			margin: 0 auto;
 		}
 
 		.contact-info {
-			grid-template-columns: 1fr;
-			gap: var(--spacing-4);
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: var(--spacing-6);
+			margin-bottom: var(--spacing-8);
 		}
 
 		.contact-card {
-			padding: var(--spacing-4);
+			background-color: var(--background-primary);
+			padding: var(--spacing-6);
+			border-radius: var(--border-radius-lg);
+			box-shadow: var(--shadow-md);
+			text-align: center;
+			transition: all 0.3s ease;
+			border: 1px solid var(--border-color);
 		}
 
+		.contact-card:hover {
+			transform: translateY(-4px);
+			box-shadow: var(--shadow-lg);
+		}
 
-	}
-</style>
+		.contact-icon {
+			font-size: 2.5rem;
+			margin-bottom: var(--spacing-3);
+		}
+
+		.contact-card h3 {
+			font-size: 1.3rem;
+			font-weight: 600;
+			color: var(--text-primary);
+			margin-bottom: var(--spacing-2);
+		}
+
+		.contact-card p {
+			color: var(--text-secondary);
+			margin-bottom: var(--spacing-3);
+			font-size: 1rem;
+		}
+
+		.contact-link {
+			display: inline-block;
+			background-color: var(--primary-color);
+			color: white;
+			padding: var(--spacing-2) var(--spacing-4);
+			border-radius: var(--border-radius);
+			text-decoration: none;
+			font-weight: 500;
+			transition: all 0.2s ease;
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		}
+
+		.contact-link:hover {
+			background-color: var(--secondary-color);
+			transform: translateY(-2px);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.contact-actions {
+			display: flex;
+			gap: var(--spacing-2);
+			justify-content: center;
+		}
+
+		.contact-actions .contact-link {
+			font-size: 0.8rem;
+			padding: var(--spacing-1) var(--spacing-2);
+		}
+
+		.contact-link.whatsapp {
+			background-color: #25D366;
+			color: white;
+		}
+
+		.contact-link.whatsapp:hover {
+			background-color: #128C7E;
+			color: white;
+			transform: translateY(-2px);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.contact-link.sms {
+			background-color: var(--primary-color);
+			color: white;
+		}
+
+		.contact-link.sms:hover {
+			background-color: var(--secondary-color);
+			color: white;
+			transform: translateY(-2px);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.contact-note {
+			color: var(--text-secondary);
+			font-size: 0.9rem;
+			font-style: italic;
+		}
+
+		/* Responsive design */
+		@media (max-width: 768px) {
+			.contact-container {
+				padding: var(--spacing-2);
+			}
+
+			.contact-header {
+				padding: var(--spacing-4);
+			}
+
+			.contact-header h1 {
+				font-size: 2rem;
+			}
+
+			.contact-info {
+				grid-template-columns: 1fr;
+				gap: var(--spacing-4);
+			}
+
+			.contact-card {
+				padding: var(--spacing-4);
+			}
+		}
+	</style>
 </div>

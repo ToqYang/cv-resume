@@ -353,8 +353,6 @@ import { getCvConfig } from '$lib/config/cvConfig';
 		font-size: 0.8rem;
 	}
 
-
-
 	.achievements-list {
 		margin-top: var(--spacing-2);
 		padding-left: var(--spacing-4);
@@ -392,8 +390,6 @@ import { getCvConfig } from '$lib/config/cvConfig';
 		color: var(--text-primary);
 		font-weight: normal;
 	}
-
-
 
 	/* Education and Training Styles */
 	.education-item, .training-item {
@@ -453,8 +449,6 @@ import { getCvConfig } from '$lib/config/cvConfig';
 		margin-bottom: 0.25rem;
 	}
 
-
-
 	/* Print styles */
 	@media print {
 		@page {
@@ -467,12 +461,11 @@ import { getCvConfig } from '$lib/config/cvConfig';
     box-sizing: border-box;
 }
 
-
-
 		.cv-container {
 			max-width: none;
 			min-height: auto;
-			background-color: white;
+			background-color: white !important;
+			color: black !important;
 		}
 
 		.no-print {
@@ -484,22 +477,26 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			max-width: 100%;
 			padding: 0;
 			margin: 0;
-			background-color: white;
+			background-color: white !important;
+			color: black !important;
 		}
 
 		.cv-header {
 			padding: 0.25rem 0;
 			margin-bottom: 0.5rem;
+			background-color: white !important;
 		}
 
 		.name {
 			font-size: 1.4rem;
 			margin-bottom: 0.1rem;
+			color: black !important;
 		}
 
 		.title {
 			font-size: 0.8rem;
 			margin-bottom: 0.25rem;
+			color: black !important;
 		}
 
 		.contact-info {
@@ -511,6 +508,11 @@ import { getCvConfig } from '$lib/config/cvConfig';
 
 		.contact-item {
 			font-size: 0.6rem;
+			color: black !important;
+		}
+
+		.contact-item a {
+			color: black !important;
 		}
 
 		.cv-section {
@@ -526,26 +528,32 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			font-size: 0.85rem;
 			margin-bottom: 0.15rem;
 			padding-bottom: 0.05rem;
+			color: black !important;
+			border-bottom: 1px solid #000 !important;
 		}
 
 		.job-title {
 			font-size: 0.75rem;
 			margin-bottom: 0.05rem;
+			color: black !important;
 		}
 
 		.company-name {
 			font-size: 0.65rem;
 			margin-bottom: 0.05rem;
+			color: black !important;
 		}
 
 		.job-meta {
 			font-size: 0.55rem;
+			color: black !important;
 		}
 
 		.summary-text, .skills-text {
 			font-size: 0.7rem;
 			line-height: 1.4;
 			margin-bottom: 0.15rem;
+			color: black !important;
 		}
 
 		.achievements-list {
@@ -557,6 +565,7 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			font-size: 0.65rem;
 			line-height: 1.3;
 			margin-bottom: 0.02rem;
+			color: black !important;
 		}
 
 		.experience-item {
@@ -575,11 +584,11 @@ import { getCvConfig } from '$lib/config/cvConfig';
 		}
 
 		.project-block a {
-			color: var(--text-primary);
+			color: black !important;
 		}
 
 		.project-description {
-			color: var(--text-primary);
+			color: black !important;
 		}
 
 		.job-header {
@@ -593,7 +602,7 @@ import { getCvConfig } from '$lib/config/cvConfig';
 		.job-meta {
 			text-align: right;
 			font-size: 0.65rem;
-			color: var(--text-secondary);
+			color: black !important;
 			min-width: 120px;
 			display: flex;
 			flex-direction: column;
@@ -606,6 +615,7 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			white-space: nowrap;
 			text-align: right;
 			line-height: 1.3;
+			color: black !important;
 		}
 
 		.job-location {
@@ -613,6 +623,7 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			white-space: nowrap;
 			text-align: right;
 			line-height: 1.3;
+			color: black !important;
 		}
 
 		/* Education and Training print styles */
@@ -625,33 +636,35 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			font-size: 0.7rem;
 			line-height: 1.3;
 			margin-bottom: 0.05rem;
+			color: black !important;
 		}
 
 		.training-line a {
-			color: var(--text-primary);
+			color: black !important;
 		}
 
 		.training-institution {
-			color: var(--text-secondary);
+			color: black !important;
 		}
 
 		.education-title {
 			font-size: 0.75rem;
 			margin-bottom: 0.05rem;
 			line-height: 1.3;
+			color: black !important;
 		}
 
 		.institution-name, .training-institution {
 			font-size: 0.65rem;
 			margin-bottom: 0.05rem;
 			line-height: 1.3;
+			color: black !important;
 		}
-
-
 
 		.education-meta {
 			font-size: 0.65rem;
 			line-height: 1.3;
+			color: black !important;
 		}
 
 		.education-header {
@@ -661,8 +674,6 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			flex-direction: row !important;
 			margin-bottom: 0.1rem;
 		}
-
-
 
 		/* Ensure training section is visible in print */
 		.cv-section:has(.training-item) {
@@ -686,8 +697,6 @@ import { getCvConfig } from '$lib/config/cvConfig';
 		.cv-content {
 			padding: var(--spacing-6);
 		}
-
-
 
 		.name {
 			font-size: 2rem;
@@ -747,7 +756,5 @@ import { getCvConfig } from '$lib/config/cvConfig';
 			white-space: nowrap;
 			text-align: right;
 		}
-
-
 	}
 </style>
