@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { designSystem } from '$lib/stores/designSystem';
 	import { currentLanguage } from '$lib/stores/translations';
 	
 	export let currentPage = '/';

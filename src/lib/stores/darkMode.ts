@@ -10,8 +10,9 @@ function getInitialTheme(): boolean {
 		return JSON.parse(saved);
 	}
 	
+	return false;
 	// Check system preference
-	return window.matchMedia('(prefers-color-scheme: dark)').matches;
+	//return window.matchMedia('(prefers-color-scheme: dark)').matches;
 }
 
 // Create the dark mode store

@@ -76,26 +76,31 @@
 	}
 
 	.language-toggle {
+		position: relative;
 		display: flex;
 		align-items: center;
 		gap: 8px;
-		background: rgba(255, 255, 255, 0.95);
+		background: var(--background-primary);
 		backdrop-filter: blur(10px);
-		border: 1px solid rgba(255, 255, 255, 0.2);
+		border: 1px solid var(--border-color);
 		border-radius: 25px;
 		padding: 8px 16px;
 		cursor: pointer;
 		transition: all 0.3s ease;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-		font-family: 'Inter', sans-serif;
-		font-weight: 500;
 		font-size: 14px;
+		font-weight: 500;
+		box-shadow: var(--shadow-sm);
 	}
 
 	.language-toggle:hover {
-		background: rgba(255, 255, 255, 0.98);
-		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+		background: var(--background-primary-hover);
+		box-shadow: var(--shadow-md);
 		transform: translateY(-1px);
+	}
+
+	.language-toggle:focus {
+		outline: 2px solid var(--focus-outline-color);
+		outline-offset: 2px;
 	}
 
 	.current-flag {
@@ -122,14 +127,17 @@
 		top: 100%;
 		right: 0;
 		margin-top: 8px;
-		background: rgba(255, 255, 255, 0.98);
+		background: var(--background-primary);
 		backdrop-filter: blur(10px);
-		border: 1px solid rgba(255, 255, 255, 0.2);
+		border: 1px solid var(--border-color);
 		border-radius: 12px;
-		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+		box-shadow: var(--shadow-lg);
 		overflow: hidden;
 		min-width: 160px;
 		animation: slideDown 0.2s ease;
+		list-style: none;
+		padding: 0;
+		margin: 8px 0 0 0;
 	}
 
 	@keyframes slideDown {
@@ -146,31 +154,31 @@
 	.language-option {
 		display: flex;
 		align-items: center;
-		gap: 12px;
-		width: 100%;
+		gap: 8px;
 		padding: 12px 16px;
-		border: none;
 		background: none;
+		border: none;
+		color: var(--text-primary);
 		cursor: pointer;
-		transition: background-color 0.2s ease;
-		font-family: 'Inter', sans-serif;
+		transition: all 0.2s ease;
 		font-size: 14px;
-		color: #333;
+		width: 100%;
+		text-align: left;
 	}
 
 	.language-option:hover {
-		background-color: rgba(0, 0, 0, 0.05);
+		background-color: var(--background-accent);
 	}
 
 	.language-option:focus {
-		outline: 2px solid #007bff;
+		outline: 2px solid var(--focus-outline-color);
 		outline-offset: -2px;
 		background-color: var(--background-accent);
 	}
 
 	.language-option.active {
 		background-color: var(--background-accent);
-		color: #007bff;
+		color: var(--primary-color);
 		font-weight: 500;
 	}
 
@@ -184,15 +192,20 @@
 
 	/* Dark mode styles */
 	:global(.dark) .language-toggle {
-		background: rgba(60, 60, 60, 0.95);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		color: #e0e0e0;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+		background: var(--background-primary);
+		border: 1px solid var(--border-color);
+		color: var(--text-primary);
+		box-shadow: var(--shadow-sm);
 	}
 
 	:global(.dark) .language-toggle:hover {
-		background: rgba(80, 80, 80, 0.98);
-		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+		background: var(--background-primary-hover);
+		box-shadow: var(--shadow-md);
+	}
+
+	:global(.dark) .language-toggle:focus {
+		outline: 2px solid var(--focus-outline-color);
+		outline-offset: 2px;
 	}
 
 	:global(.dark) .current-lang {
@@ -204,28 +217,28 @@
 	}
 
 	:global(.dark) .language-dropdown {
-		background: rgba(60, 60, 60, 0.98);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+		background: var(--background-primary);
+		border: 1px solid var(--border-color);
+		box-shadow: var(--shadow-lg);
 	}
 
 	:global(.dark) .language-option {
-		color: #e0e0e0;
+		color: var(--text-primary);
 	}
 
 	:global(.dark) .language-option:hover {
-		background-color: rgba(255, 255, 255, 0.15);
+		background-color: var(--background-accent);
 	}
 
 	:global(.dark) .language-option:focus {
-		outline: 2px solid #007bff;
+		outline: 2px solid var(--focus-outline-color);
 		outline-offset: -2px;
 		background-color: var(--background-accent);
 	}
 
 	:global(.dark) .language-option.active {
 		background-color: var(--background-accent);
-		color: #007bff;
+		color: var(--primary-color);
 		font-weight: 500;
 	}
 

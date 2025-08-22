@@ -30,7 +30,7 @@
 					</div>
 					<p class="project-description">{project.description}</p>
 					<div class="project-actions">
-						<a href={project.link} target="_blank" rel="noopener noreferrer" class="project-link">
+						<a href={project.link} target="_blank" rel="noopener noreferrer" class="btn">
 							View Repository →
 						</a>
 					</div>
@@ -61,6 +61,7 @@
 		background-color: var(--background-primary);
 		min-height: 100vh;
 		position: relative;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 	}
 
 	.projects-header {
@@ -93,7 +94,7 @@
 	}
 
 	.project-card {
-		background-color: white;
+		background-color: var(--card-bg);
 		padding: var(--spacing-6);
 		border-radius: var(--border-radius-lg);
 		box-shadow: var(--shadow-md);
@@ -145,23 +146,8 @@
 		justify-content: flex-end;
 	}
 
-	.project-link {
-		background-color: var(--primary-color);
-		color: white;
-		padding: var(--spacing-2) var(--spacing-4);
-		border-radius: var(--border-radius);
-		text-decoration: none;
-		font-weight: 500;
-		transition: all 0.2s ease;
-	}
-
-	.project-link:hover {
-		background-color: var(--primary-dark);
-		transform: translateY(-2px);
-	}
-
 	.skills-section {
-		background-color: white;
+		background-color: var(--card-bg);
 		padding: var(--spacing-6);
 		border-radius: var(--border-radius-lg);
 		box-shadow: var(--shadow-md);

@@ -66,25 +66,25 @@
 
 	/* Focus styles for accessibility */
 	.dark-mode-toggle:focus {
-		outline: 2px solid #007bff;
+		outline: 2px solid var(--focus-outline-color);
 		outline-offset: 2px;
 	}
 
 	:global(.dark) .dark-mode-toggle:focus {
-		outline: 2px solid #007bff;
+		outline: 2px solid var(--focus-outline-color);
 		outline-offset: 2px;
 	}
 
 	/* Dark mode styles */
 	:global(.dark) .dark-mode-toggle {
-		background: rgba(60, 60, 60, 0.95);
-		border: 1px solid rgba(255, 255, 255, 0.2);
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+		background: var(--background-primary);
+		border: 1px solid var(--border-color);
+		box-shadow: var(--shadow-sm);
 	}
 
 	:global(.dark) .dark-mode-toggle:hover {
-		background: rgba(80, 80, 80, 0.98);
-		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+		background: var(--background-primary-hover);
+		box-shadow: var(--shadow-md);
 	}
 
 	/* Responsive design */

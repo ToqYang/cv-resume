@@ -69,13 +69,11 @@
 	<meta property="og:title" content={`${t.title} - Santiago Toquica Yanguas`} />
 	<meta property="og:description" content={t.title} />
 	<meta property="og:type" content="article" />
-	<meta property="og:image" content="/photo_profile.jpeg" />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={`${t.title} - Santiago Toquica Yanguas`} />
 	<meta name="twitter:description" content={t.title} />
-	<meta name="twitter:image" content="/photo_profile.jpeg" />
 </svelte:head>
 
 <div class="cl-container">
