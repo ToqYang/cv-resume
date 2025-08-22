@@ -17,7 +17,7 @@
 		<div class="error-content">
 			<div class="error-image-container">
 				<img 
-					src="/error.jpg" 
+					src="./error.jpg" 
 					alt="Page not found" 
 					class="error-image"
 					draggable="false"

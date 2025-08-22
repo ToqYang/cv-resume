@@ -146,8 +146,34 @@
 	}
 
 	@media print {
-		.cl-container { padding-bottom: 0 !important; }
-		.print-button, .no-print, :global(.floating-nav) { display: none !important; }
-		.cl-content { box-shadow: none; border-radius: 0; }
+		@page {
+			margin: 0;
+			size: A4;
+		}
+		
+		body, .cl-container, .cl-content {
+			background-color: white !important;
+			margin: 0;
+			padding: 0 !important;
+		}
+		
+		.cl-container { 
+			padding: 0 !important;
+			height: 100%;
+		}
+		
+		.cl-content {
+			margin: 0 !important;
+			padding: 2cm !important;
+			box-shadow: none !important;
+			border-radius: 0 !important;
+			min-height: 29.7cm;
+			width: 21cm;
+			display: block;
+		}
+		
+		.print-button, .no-print, :global(.floating-nav) { 
+			display: none !important; 
+		}
 	}
 </style>

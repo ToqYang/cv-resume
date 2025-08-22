@@ -59,7 +59,7 @@
 					<div class="contact-icon">💼</div>
 					<h3>{config.links.linkedin}</h3>
 					<p>{config.labels.professionalProfile}</p>
-					<a href="https://linkedin.com/in/{$cvData.personal.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-link">
+					<a href="{$cvData.personal.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-link">
 						{config.buttons.linkedin}
 					</a>
 				</div>
@@ -68,7 +68,7 @@
 					<div class="contact-icon">🐙</div>
 					<h3>{config.links.github}</h3>
 					<p>{config.labels.codeRepository}</p>
-					<a href="https://github.com/{$cvData.personal.github}" target="_blank" rel="noopener noreferrer" class="contact-link">
+					<a href="{$cvData.personal.github}" target="_blank" rel="noopener noreferrer" class="contact-link">
 						{config.buttons.github}
 					</a>
 				</div>

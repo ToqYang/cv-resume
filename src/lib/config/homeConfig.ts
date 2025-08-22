@@ -66,10 +66,16 @@ export const homeConfig: Record<string, HomeConfig> = {
 		},
 		skills: [
 			{
+				icon: "🤖",
+				title: "AI & Machine Learning",
+				technologies: "AWS Bedrock, Agentic AI, RAG, AI Code (Cursor, Avante), MCP/API",
+				description: "Building AI-powered applications with modern tooling, including agent systems, retrieval-augmented generation, and AI-assisted development"
+			},
+			{
 				icon: "💻",
 				title: "Full Stack Development",
 				technologies: "Rails, React, Node.js, TypeScript, PostgreSQL, Redis",
-				description: "Building complete web applications from frontend to backend, including responsive UI, robust APIs, and database design"
+				description: "Building complete web applications from frontend to backend, including responsive UIs, robust APIs, and database design"
 			},
 			{
 				icon: "📱",
@@ -104,14 +110,14 @@ export const homeConfig: Record<string, HomeConfig> = {
 		],
 		footer: {
 			styleGuide: "Style Guide",
-			copyright: "© 2025 Santiago Toquica Yanguas. All rights reserved."
+			copyright: `© ${new Date().getFullYear()} Santiago Toquica Yanguas. All rights reserved.`
 		}
 	},
 	ES: {
 		hero: {
 			title: "¡Hola, soy Santiago!",
-			subtitle: "Ingeniero de Software",
-			description: "Ingeniero de software especializado en Rails, React JS, Node JS y TypeScript. Enfocado en soluciones centradas en el usuario, despliegue de aplicaciones móviles y optimización de rendimiento.",
+			subtitle: "Software Engineer",
+			description: "Software Engineer especializado en Rails, React JS, Node JS y TypeScript. Enfocado en soluciones centradas en el usuario, despliegue de aplicaciones móviles y optimización de rendimiento.",
 			buttons: [
 				{
 					text: "Descargar CV",
@@ -132,6 +138,12 @@ export const homeConfig: Record<string, HomeConfig> = {
 			subDescription: ""
 		},
 		skills: [
+			{
+				icon: "🤖",
+				title: "IA y Aprendizaje Automático",
+				technologies: "AWS Bedrock, Agentic AI, RAG, AI Code (Cursor, Avante), MCP/API",
+				description: "Desarrollo de aplicaciones potenciadas por IA con herramientas modernas, incluyendo sistemas de agentes, generación aumentada por recuperación y desarrollo asistido por IA"
+			},
 			{
 				icon: "💻",
 				title: "Desarrollo Full Stack",
@@ -171,7 +183,7 @@ export const homeConfig: Record<string, HomeConfig> = {
 		],
 		footer: {
 			styleGuide: "Guía de Estilos",
-			copyright: "© 2025 Santiago Toquica Yanguas. Todos los derechos reservados."
+			copyright: `© ${new Date().getFullYear()} Santiago Toquica Yanguas. Todos los derechos reservados.`
 		}
 	}
 };

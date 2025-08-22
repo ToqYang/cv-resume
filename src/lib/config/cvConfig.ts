@@ -35,12 +35,12 @@ export const cvConfig = {
 			skills: {
 				title: "Skills",
 				description: "Technical skills and competencies",
-				content: "Ruby on Rails/Python (secure API development), React JS/React Native (responsive UIs), AWS S3/DynamoDB/API Gateway (scalable cloud architectures), Docker/Terraform (containerized deployments & IaC), RSpec (test coverage >85%), Figma/Adobe XD (user-centered design), Agile/Scrum/Shape Up/Kanban (on-time delivery of 15+ partner integrations)."
+				content: "Agentic AI, AI Code(Cursor, Avante), RAG, MCP, Ruby on Rails/Python (secure API development), React JS/React Native (responsive UIs), AWS S3/DynamoDB/API Gateway/Lambda (scalable cloud architectures), Docker/Terraform (containerized deployments & IaC), RSpec (test coverage >85%), Figma/Adobe XD (user-centered design), Agile/Scrum/Shape Up/Kanban (on-time delivery of 15+ partner integrations)."
 			},
 			summary: {
 				title: "Summary",
 				description: "Professional summary and overview",
-				content: "Santiago is a results-driven full-stack and mobile developer who creates digital products that boost adoption by 98%, cut process times by 96.5%, and deliver measurable business growth. He blends user insight with strategic execution, helping teams work faster and smarter through AWS services, (Agile, Shape Up, and Kanban)."
+				content: "With 5+ years of experience, Santiago is a results-driven full-stack and mobile developer who creates digital products that boost adoption by 98%, cut process times by 96.5%, and deliver measurable business growth. He blends user insight with strategic execution, helping teams work faster and smarter through AWS services, (Agile, Shape Up, and Kanban)."
 			},
 			experience: {
 				title: "Experience",
@@ -70,7 +70,7 @@ export const cvConfig = {
 						]
 					},
 					{
-						title: "Mid Backend Developer",
+						title: "SSr Backend Developer",
 						company: "Symplifica",
 						period: "02/2022 - 07/2023",
 						location: "Full Time – Remote",
@@ -128,11 +128,6 @@ export const cvConfig = {
 						link: "https://www.credly.com/badges/7ab605d5-72f6-4259-a66b-cca16423c89a/public_url"
 					},
 					{
-						name: "Modern Application Development with Python on AWS Specialization",
-						institution: "Coursera",
-						link: "https://coursera.org/share/94b4bae216c2c7699b7d44d3717534de"
-					},
-					{
 						name: "Google UX Design Specialization",
 						institution: "Coursera Google",
 						link: "https://coursera.org/share/66f862ea6766d3fba455f5dcd3db3590"
@@ -146,22 +141,22 @@ export const cvConfig = {
 					{
 						name: "AirBnB clone",
 						description: "The console of the AirBnB clone is a command interpreter to manage the AirBnB objects, that allow to understand the manipulation of the information required and how is storage in the program.",
-						link: "https://github.com/santiago-toquica/airbnb-clone"
+						link: "https://github.com/ToqYang/AirBnB_clone_v4"
 					},
 					{
 						name: "Printf",
 						description: "The _printf function is a custom implementation of the standard printf function in C.",
-						link: "https://github.com/santiago-toquica/printf"
+						link: "https://github.com/ToqYang/printf"
 					},
 					{
 						name: "Simple shell",
 						description: "Custom Unix shell, inspired by Ken Thompson's 1971 shell, to reinforce C programming and operating system concepts.",
-						link: "https://github.com/santiago-toquica/simple-shell"
+						link: "https://github.com/ToqYang/simple_shell"
 					},
 					{
 						name: "Simpletron Machine",
 						description: "Developed a Simpletron Machine simulator to execute machine language instructions, demonstrating computer architecture fundamentals.",
-						link: "https://github.com/santiago-toquica/simpletron-machine"
+						link: "https://github.com/ToqYang/Programming-C_CPP-DeitelbBook/tree/main/11-file-processing/simpletron-machine"
 					}
 				]
 			}
@@ -179,11 +174,11 @@ export const cvConfig = {
 	ES: {
 		meta: {
 			title: "Sobre Mí - Santiago Toquica Yanguas",
-			description: "Ingeniero de Software - Santiago Toquica Yanguas"
+			description: "Software Engineer - Santiago Toquica Yanguas"
 		},
 		personal: {
 			name: "Santiago Toquica Yanguas",
-			title: "Ingeniero de Software",
+			title: "Software Engineer",
 			contactInfo: [
 				{
 					icon: "📞",
@@ -211,19 +206,19 @@ export const cvConfig = {
 			skills: {
 				title: "Habilidades",
 				description: "Habilidades técnicas y competencias",
-				content: "Ruby on Rails, Ruby, React JS, AWS, Cloudwatch, Dynamo DB, Figma, HTML5/CSS, iOS, Javascript, Material UI, Python, Quality Assurance, Rails, React JS, React Native, Redux, RSpec, S3, Scrum, UI/UX, Webflow, Adobe XD, Agile, Android, Tailwind, Management."
+				content: "Agentic AI, AI Code(Cursor, Avante), RAG, MCP, Ruby on Rails/Python (desarrollo de APIs seguras), React JS/React Native (interfaces de usuario responsivas), AWS S3/DynamoDB/API Gateway/Lambda (arquitecturas en la nube escalables), Docker/Terraform (despliegues en contenedores e IaC), RSpec (cobertura de pruebas >85%), Figma/Adobe XD (diseño centrado en el usuario), Agile/Scrum/Shape Up/Kanban (entrega puntual de más de 15 integraciones con socios)."
 			},
 			summary: {
 				title: "Resumen",
 				description: "Resumen profesional y visión general",
-				content: "Santiago es un Ingeniero de Software especializado en Rails, React JS, Node JS y TypeScript. Crea soluciones centradas en el usuario, despliega aplicaciones móviles y colabora con equipos para alinear la tecnología con los objetivos empresariales. Santiago sobresale en optimización de rendimiento y traducción de necesidades de usuario en soluciones eficientes y escalables."
+				content: "Con más de 5 años de experiencia, Santiago es un Software Engineer especializado en Rails, React JS, Node JS y TypeScript. Crea soluciones centradas en el usuario, despliega aplicaciones móviles y colabora con equipos para alinear la tecnología con los objetivos empresariales. Santiago sobresale en optimización de rendimiento y traducción de necesidades de usuario en soluciones eficientes y escalables."
 			},
 			experience: {
 				title: "Experiencia",
 				description: "Experiencia laboral profesional",
 				items: [
 					{
-						title: "Sr. Ingeniero de Software",
+						title: "Sr. Software Engineer",
 						company: "The Data Culture",
 						period: "Nov 2024 - Presente",
 						location: "Allen, Texas, Estados Unidos · Remoto",
@@ -235,7 +230,7 @@ export const cvConfig = {
 						]
 					},
 					{
-						title: "Desarrollador Full Stack Móvil",
+						title: "Desarrollador Full Stack Mobile Developer",
 						company: "HANU FIT",
 						period: "02/2022 – 07/2024",
 						location: "Contratista/Tiempo Completo - Remoto",
@@ -246,7 +241,7 @@ export const cvConfig = {
 						]
 					},
 					{
-						title: "Desarrollador Backend Mid",
+						title: "SSr Backend Developer",
 						company: "Symplifica",
 						period: "02/2022 - 07/2023",
 						location: "Tiempo Completo – Remoto",
@@ -306,11 +301,6 @@ export const cvConfig = {
 						link: "https://www.credly.com/badges/7ab605d5-72f6-4259-a66b-cca16423c89a/public_url"
 					},
 					{
-						name: "Especialización en Desarrollo de Aplicaciones Modernas con Python en AWS",
-						institution: "Coursera",
-						link: "https://coursera.org/share/94b4bae216c2c7699b7d44d3717534de"
-					},
-					{
 						name: "Especialización en Diseño UX de Google",
 						institution: "Coursera Google",
 						link: "https://coursera.org/share/66f862ea6766d3fba455f5dcd3db3590"
@@ -324,22 +314,22 @@ export const cvConfig = {
 					{
 						name: "Clon de AirBnB",
 						description: "La consola del clon de AirBnB es un intérprete de comandos para gestionar los objetos de AirBnB, que permite entender la manipulación de la información requerida y cómo se almacena en el programa.",
-						link: "https://github.com/santiago-toquica/airbnb-clone"
+						link: "https://github.com/ToqYang/AirBnB_clone_v4"
 					},
 					{
 						name: "Printf",
 						description: "La función _printf es una implementación personalizada de la función printf estándar en C.",
-						link: "https://github.com/santiago-toquica/printf"
+						link: "https://github.com/ToqYang/printf"
 					},
 					{
 						name: "Shell simple",
 						description: "Shell Unix personalizado, inspirado en el shell de Ken Thompson de 1971, para reforzar conceptos de programación C y sistemas operativos.",
-						link: "https://github.com/santiago-toquica/simple-shell"
+						link: "https://github.com/ToqYang/simple_shell"
 					},
 					{
 						name: "Máquina Simpletron",
 						description: "Desarrollé un simulador de Máquina Simpletron para ejecutar instrucciones de lenguaje máquina, demostrando fundamentos de arquitectura de computadoras.",
-						link: "https://github.com/santiago-toquica/simpletron-machine"
+						link: "https://github.com/ToqYang/Programming-C_CPP-DeitelbBook/tree/main/11-file-processing/simpletron-machine"
 					}
 				]
 			}
